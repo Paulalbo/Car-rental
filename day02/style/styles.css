@@ -1,0 +1,436 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+b {
+  font-weight: 700;
+}
+
+h3, h1 {
+  padding: 6vh 0 1vh 0;
+  text-transform: uppercase;
+}
+
+.admin {
+  top: 0;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 2vh 5vw;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+}
+
+.green {
+  color: white;
+  background-color: black;
+  padding: 0 1vw;
+}
+
+.red {
+  color: white;
+  background-color: black;
+  padding: 0 1vw;
+}
+
+nav {
+  background-color: white;
+  min-height: 5vh;
+  font-size: 1.3em;
+  border-bottom: solid 1px #A87F7F;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white !important;
+  cursor: pointer;
+}
+
+nav .profilename {
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron h1 {
+  padding: 50px;
+  background-color: white;
+  font-size: 5vw;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: black;
+  position: fixed;
+  z-index: 10;
+}
+
+.container-fluid #contact {
+  padding: 3vh 3vw;
+  z-index: 30;
+  background-color: #f8f9fafa;
+  position: relative;
+  width: 100%;
+}
+
+#contact .row {
+  padding: 0 0 5vh 0;
+}
+
+#cars, #bikes, #SUV {
+  z-index: 20;
+  background-color: #f8f9fafa;
+  position: relative;
+  width: 100%;
+  padding: 3vh 10vw 5vh 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.deleteform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login {
+  padding: 0 0 15vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+}
+
+.container-fluid {
+  z-index: 20;
+  background-color: #f8f9fafa;
+  position: relative;
+  width: 100%;
+}
+
+.container-fluid .col-xl-3 {
+  max-width: 350px;
+  background-color: white;
+  margin: 1vh;
+  min-height: 30vh;
+}
+
+.container-fluid img {
+  height: 20vh;
+  width: 100%;
+  max-width: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  margin-bottom: 1vw;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.container-fluid h4, .container-fluid h5 {
+  margin-left: 1vw;
+  line-height: 1.5;
+}
+
+.container-fluid img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.container-fluid button {
+  margin: 0 10% 1vh 10%;
+  width: 80%;
+  border-radius: 50px;
+  background-color: #D1CFCF;
+  border: none;
+}
+
+.container-fluid button:hover {
+  cursor: pointer;
+  background-color: #959595;
+  background-color: black;
+  color: white;
+}
+
+.container-fluid button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container-fluid button:focus {
+  outline: none;
+}
+
+.container-fluid .addcar {
+  width: 100%;
+  height: 100%;
+  background-color: #d1cfcf;
+  padding: 1vh;
+  border: 1vh white solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fluid .addcar:hover {
+  cursor: pointer;
+  background-color: #aaa8a8;
+  color: white;
+}
+
+.container-fluid .addcar:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container-fluid .addcar span {
+  font-size: 5vh;
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.container-fluid .addcar span::first-letter {
+  font-size: 20vh;
+}
+
+.container-fluid .addcar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+form {
+  margin: auto;
+  padding: 5%;
+}
+
+form label {
+  width: 100%;
+  border-bottom: 1px solid;
+  margin: 1vh 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  border: none;
+  background-color: initial;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+}
+
+form .btn {
+  background: #212529;
+  color: white;
+  margin: 1vh 0;
+}
+
+form .btn:hover {
+  background: #5c5c5c;
+  color: white;
+}
+
+form select, form option {
+  width: 100%;
+  border: none;
+  background-color: initial;
+}
+
+.contactimg {
+  background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactimg h1 {
+  background-color: white;
+  font-size: 5vw;
+  letter-spacing: 0.3em;
+  color: black;
+  padding: 5px;
+}
+
+/* The Modal (background) */
+.slider {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  width: 33%;
+  height: 100%;
+  overflow: auto;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  border: none;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  right: 0;
+  top: 0;
+  background-color: #fefefe;
+  width: 33vw;
+  height: 100%;
+  padding-top: 6vh;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  margin: 0 1vw 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: black;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-body h1 {
+  padding: 0;
+}
+
+.modal-body img {
+  width: 100%;
+  max-width: 50vw;
+}
+
+.modal-body .content {
+  text-align: center;
+  padding: 5%;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    right: -50vw;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    right: -50vw;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

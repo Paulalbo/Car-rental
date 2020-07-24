@@ -1,0 +1,345 @@
+*
+    font-family: 'Lato', sans-serif
+
+html
+    scroll-behavior: smooth
+
+body
+    background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: right
+
+b
+    font-weight: 700
+
+h3, h1
+    padding: 6vh 0 1vh 0
+    text-transform: uppercase
+
+.admin
+    top: 0
+    position: absolute
+    background-color: black
+    color: white
+    padding: 2vh 5vw
+    margin: 0 auto
+    letter-spacing: 5px
+    left: 50%
+    transform: translate(-50%)
+    text-align: center
+
+.green
+        color: white
+        background-color: black
+        padding: 0 1vw
+
+.red
+        color: white
+        background-color: black
+        padding: 0 1vw
+nav
+    background-color: white
+    min-height: 5vh
+    font-size: 1.3em
+    border-bottom: solid 1px #A87F7F
+
+    & a:hover
+        background-color: black
+        color: white!important
+        cursor: pointer
+
+    & .profilename
+        text-transform: uppercase
+
+
+.jumbotron
+    height: 100vh
+    background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: right
+    margin: 0
+    padding: 0
+
+    & h1
+        padding: 50px
+        background-color: white
+        font-size: 5vw
+        letter-spacing: 0.3em
+        text-align: center
+        color: black
+        position: fixed
+        z-index: 10
+
+.container-fluid #contact
+    padding: 3vh 3vw
+    z-index: 30
+    background-color: #f8f9fafa
+    position: relative
+    width: 100%
+
+#contact .row
+    padding: 0 0 5vh 0
+
+#cars, #bikes, #SUV
+    z-index: 20
+    background-color: #f8f9fafa
+    position: relative
+    width: 100%
+    padding: 3vh 10vw 5vh 10vw
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.deleteform
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+#login
+    padding: 0 0 15vh 0
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 95vh
+
+
+.container-fluid
+    z-index: 20
+    background-color: #f8f9fafa
+    position: relative
+    width: 100%
+
+
+    & .col-xl-3
+        max-width: 350px
+        background-color: white
+        margin: 1vh
+        min-height: 30vh
+    
+    
+    & img
+        height: 20vh
+        width: 100%
+        max-width: 350px
+        object-fit: contain
+        cursor: pointer
+        filter: grayscale(80%)
+        margin-bottom: 1vw
+        transition: 500ms
+
+    & h4, h5 
+        margin-left: 1vw
+        line-height: 1.5
+
+    & img:hover
+        transform: scale(1.1)
+        filter: grayscale(0)
+    
+    & button
+        margin: 0 10% 1vh 10%
+        width: 80%
+        border-radius: 50px
+        background-color: #D1CFCF
+        border: none
+
+    & button:hover
+        cursor: pointer
+        background-color: #959595
+        background-color: black
+        color: white
+    
+    & button:active
+        transform: scale(0.9)
+
+    & button:focus
+        outline: none
+
+    
+    & .addcar
+        width: 100%
+        height: 100%
+        background-color: #d1cfcf
+        padding: 1vh
+        border: 1vh white solid
+        display: flex
+        justify-content: center
+    
+    & .addcar:hover
+        cursor: pointer
+        background-color: #aaa8a8
+        color: white
+
+    & .addcar:active
+        transform: scale(0.9)
+
+
+    & .addcar span
+        font-size: 5vh
+        line-height: 1
+        user-select: none
+        text-align: center
+
+    & .addcar span::first-letter
+        font-size: 20vh
+    
+    & .addcar a 
+        color: inherit
+        text-decoration: none
+
+form
+    margin: auto
+    padding: 5%
+
+    & label
+        width: 100%
+        border-bottom: 1px solid
+        margin: 1vh 0
+
+    & input, textarea
+        width: 100%
+        border: none
+        background-color: initial
+
+    & input:focus, textarea:focus
+        outline: none
+
+    & .btn
+        background: #212529
+        color: white
+        margin: 1vh 0
+        
+    & .btn:hover
+        background: #5c5c5c
+        color: white
+    
+    & select,option
+        width: 100%
+        border: none
+        background-color: initial
+
+
+.contactimg
+    background-image: url(https://cdn.motor1.com/images/mgl/82k7W/s1/cars-parked-in-an-underground-parking-garage.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: right
+    height: 45vw
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+
+    & h1
+        background-color: white
+        font-size: 5vw
+        letter-spacing: 0.3em
+        color: black
+        padding: 5px
+
+
+/* The Modal (background) */
+.slider 
+    position: fixed /* Stay in place */
+    z-index: 1 /* Sit on top */
+    right: 0
+    bottom: 0
+    width: 33% /* Full width */
+    height: 100% /* Full height */
+    overflow: auto /* Enable scroll if needed */
+    -webkit-animation-name: fadeIn /* Fade in the background */
+    -webkit-animation-duration: 0.4s
+    animation-name: fadeIn
+    animation-duration: 0.4s
+    border: none
+
+
+/* Modal Content */
+.modal-content 
+  position: relative
+  right: 0
+  top: 0
+  background-color: #fefefe
+  width: 33vw
+  height: 100%
+  padding-top: 6vh
+  -webkit-animation-name: slideIn
+  -webkit-animation-duration: 0.4s
+  animation-name: slideIn
+  animation-duration: 0.4s
+
+
+/* The Close Button */
+.close 
+  color: black
+  margin: 0 1vw 0 auto
+  font-size: 28px
+  font-weight: bold
+
+
+.close:hover,
+.close:focus 
+  color: #000
+  text-decoration: none
+  cursor: pointer
+
+
+.modal-header 
+  padding: 2px 16px
+  color: black
+
+
+.modal-body
+    padding: 2px 16px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    
+.modal-body h1
+    padding: 0
+
+.modal-body img
+    width: 100%
+    max-width: 50vw
+
+.modal-body .content
+    text-align: center
+    padding: 5%
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn 
+    from
+        right: -50vw
+
+    to
+        right: 0
+        opacity: 1
+
+
+@keyframes slideIn 
+    from
+        right: -50vw 
+
+    to
+        right: 0 
+        opacity: 1
+
+
+@-webkit-keyframes fadeIn 
+    from
+ 
+    to 
+        opacity: 1
+
+
+@keyframes fadeIn 
+    from 
+
+    to 
+        opacity: 1
+
+
